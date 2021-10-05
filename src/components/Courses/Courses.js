@@ -10,7 +10,7 @@ const Courses = () => {
     },[])
     return (
         <div>
-            <h1>Unlimited Access to More Than {courses.length} Courses.</h1>
+            <h1 className="mb-3">Unlimited Access to More Than {courses.length} Courses.</h1>
             <div className="row row-cols-1 row-cols-md-3 g-4">
             {
                 courses.map(course => <Course course={course}></Course>)

@@ -50,7 +50,7 @@ const Footer = () => {
             </div>
             <div className='lastText p-4'>
                 <p className='text-center m-0'>Copyright&copy;2021 Study 24/7, All Right Reserved.</p>
-            </div>       
+            </div>
         </div>
     );
 };

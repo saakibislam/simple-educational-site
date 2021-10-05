@@ -15,7 +15,7 @@ const About = () => {
                     <img src="https://i.ibb.co/QpSGv4x/about.jpg" alt="" />
                 </div>
                 <div className="col-md-6 mb-2">
-                    <h1>Study 24/7</h1>
+                    <h1 className="fw-bold" style={{color:'#fd592d'}}>Study 24/7</h1>
                     <h3 className="fw-bolder">Accelerate your future.</h3>
                     <p>When deciding on the visual aspects of an education website, there are many important factors to consider. Be strategic. This website could be the decision-maker for those who are interested in gaining knowledge from your institution or becoming employees who share their knowledge with others.</p>
                     <hr />
