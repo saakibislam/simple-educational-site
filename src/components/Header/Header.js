@@ -1,15 +1,17 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import logo from '../../images/logo.png';
 
 const Header = () => {
+    // "https://i.ibb.co/VCSmFW0/logo.png"
     return (
-        <div className="p-3 fs-4 d-flex justify-content-between align-items-center">
-            <img src="https://i.ibb.co/VCSmFW0/logo.png" alt="" />
+        <div className="px-4 fs-4 d-flex justify-content-between align-items-center">
+            <a href='/home'><img style={{ height: '80px', marginLeft: '35px' }} src={logo} alt="" /></a>
             <div>
-            <NavLink className="mx-3 text-decoration-none" to="/home" activeStyle={{fontWeight: "bold", color:'#FF4311'}}>Home</NavLink>
-            <NavLink className="mx-3 text-decoration-none" to="/courses" activeStyle={{fontWeight:'bold', color:'#FF4311'}}>Courses</NavLink>
-            <NavLink className="mx-3 text-decoration-none" to="/contact" activeStyle={{fontWeight:'bold', color:'#FF4311'}}>Contact</NavLink>
-            <NavLink className="mx-3 text-decoration-none" to="/about" activeStyle={{fontWeight:'bold', color:'#FF4311'}}>About</NavLink>
+                <NavLink className="mx-3 text-decoration-none text-dark" to="/home" activeStyle={{ fontWeight: "bold"}}>Home</NavLink>
+                <NavLink className="mx-3 text-decoration-none text-dark" to="/courses" activeStyle={{ fontWeight: 'bold'}}>Courses</NavLink>
+                <NavLink className="mx-3 text-decoration-none text-dark" to="/contact" activeStyle={{ fontWeight: 'bold'}}>Contact</NavLink>
+                <NavLink className="mx-3 text-decoration-none text-dark" to="/about" activeStyle={{ fontWeight: 'bold'}}>About</NavLink>
             </div>
         </div>
     );

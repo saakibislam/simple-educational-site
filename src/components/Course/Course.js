@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 const Course = (props) => {
-    console.log(props);
+    // console.log(props);
     const {title, description, instructor, img, languages, lastUpdated, students} = props.course;
     const {rating, count} = props.course.reviews;
     return (
@@ -27,8 +27,9 @@ const Course = (props) => {
                             <li className="list-inline-item">Reviews: {count}</li>
                         </div>
                     </small></ul>
-                    <div className="d-flex justify-content-between my-1">
+                    <div className="d-flex justify-content-between align-items-center my-1">
                         <button className="btn btn-md btn-success"><FontAwesomeIcon icon={faHeart}></FontAwesomeIcon> <span className="mx-2">Wishlist</span></button>
+                        <h4>$ {(Math.random() * 100).toFixed(2)}</h4>
                         <button className="btn btn-md btn-success"><FontAwesomeIcon icon={faClipboardCheck}></FontAwesomeIcon> <span className="mx-2">Enroll</span></button>
                     </div>
                 </div>
